@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: springboot-ldap
+  #ldap:
+   # urls: ldap://localhost:389
+    #base: ou=users,dc=mycompany,dc=com
+    #username: cn=admin,dc=mycompany,dc=com
+    #password: admin
+    #anonymousReadOnly: true
+
+#ldap:
+ # userDnPattern: uid={0}
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure.include: "*"
+  endpoint:
+    health:
+      showDetails: always
